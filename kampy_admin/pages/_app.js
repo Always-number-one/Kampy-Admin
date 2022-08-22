@@ -1,5 +1,6 @@
 import '../styles/globals.css'
-import '../styles/cards.css'
+
+
 
 function MyApp({ Component, pageProps }) {
 

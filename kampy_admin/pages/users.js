@@ -20,11 +20,11 @@ function Users({ list }) {
   return (
     <div className="bg-white-50 text-tahiti">
 
+      <SideBar />
       <br />
       <br />
 
-      <SideBar />
-      <h1 className="block w-full text-center text-grey-darkest mb-11 text-5xl decoration-double text-zinc-900	"> Users management</h1>
+      <h1 className='text-5xl text-center text-amber-600 mb-2'>User's management</h1>
       <div className="flex flex-col">
         <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="py-4 inline-block min-w-full sm:px-6 lg:px-8">
@@ -48,7 +48,10 @@ function Users({ list }) {
                   >
                     Email
                   </th>
-                  Ban
+                  <th
+                    scope="col" className="text-sm font-medium text-center text-white px-6 py-4 border-separate border-spacing-2 border border-slate-500"
+                  >BAN</th>
+                  
                 </tr>
               </thead>
               <tbody>
@@ -86,10 +89,10 @@ function Users({ list }) {
                           border: 'solid 1px gray',
                         }}
                       >
-                        <AiFillDelete />
-                        <button onClick={event =>
+                  
+                       <center><button> <AiFillDelete  onClick={event =>
                           deleteUser(e.id, event)
-                        }>Ban</button>
+                        } /></button></center>
                       </td>
                     </tr>
                   )
