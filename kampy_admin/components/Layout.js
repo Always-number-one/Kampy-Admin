@@ -80,9 +80,7 @@ export default function Layout() {
                                             </div>
                                         </div>
                                         <div class="flex items-center justify-start my-4 space-x-4">
-                                            <span class="px-2 py-1 flex items-center text-xs rounded-md font-semibold text-green-500 bg-green-50">
-                                                Mute user
-                                            </span>
+                                            
                                             <span class="px-2 py-1 flex items-center text-xs rounded-md text-blue-500 font-semibold bg-blue-100">
                                                 Ban user
                                             </span>
@@ -215,7 +213,7 @@ export default function Layout() {
                                                         02
                                                     </span>
                                                     <span>
-                                                        Ckeck same users conversation and ban or mute malicious users
+                                                        Ckeck some users posts and ban malicious users
                                                     </span>
                                                     <span class="lg:ml-6 ml-2 flex items-center text-gray-400 dark:text-gray-300">
                                                         3
@@ -296,7 +294,7 @@ export default function Layout() {
                                                         06
                                                     </span>
                                                     <span>
-                                                        Verify the events 
+                                                        Verify the events
                                                     </span>
                                                     <span class="lg:ml-6 ml-2 flex items-center text-gray-400 dark:text-gray-300">
                                                         3
@@ -671,7 +669,7 @@ export default function Layout() {
                                         <ul>
                                             <li class="flex items-center my-6 space-x-2">
                                                 <a href="#" class="block relative">
-                                                    <img alt="profil" src="https://3zaee7z1nhqqava71wm2hiyc-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/portrait-hani-basile.jpg" class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                                    <img alt="profil" src="https://firebasestorage.googleapis.com/v0/b/kampy-3.appspot.com/o/badreddine?alt=media&token=097e6a16-e920-44e6-97d1-9d19c25db82b" class="mx-auto object-cover rounded-full h-10 w-10 " />
                                                 </a>
                                                 <div class="flex flex-col">
                                                     <span class="text-sm text-gray-900 font-semibold dark:text-white ml-2">
@@ -684,7 +682,7 @@ export default function Layout() {
                                             </li>
                                             <li class="flex items-center my-6 space-x-2">
                                                 <a href="#" class="block relative">
-                                                    <img alt="profil" src="https://th.bing.com/th/id/R.f0fcd342455ce97bad71dbaf115e345f?rik=W7JRleke3xyB3w&riu=http%3a%2f%2fcdn2-public.ladmedia.fr%2fvar%2fpublic%2fstorage%2fimages%2fnews%2fphotos%2fphotos-solweig-rediger-lizlow-la-miss-meteo-trop-fine-et-alors-109963%2fune-jeune-fille-toute-fraiche-109975%2f910893-1-fre-FR%2fUne-jeune-fille-toute-fraiche_portrait_w674.jpg&ehk=h5HFQMm7AgA0q5kGWfXvpRIQo1dnPJqsHnf3STEFIQk%3d&risl=&pid=ImgRaw&r=0" class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                                    <img alt="profil" src="https://firebasestorage.googleapis.com/v0/b/kampy-3.appspot.com/o/omar?alt=media&token=e997c18e-f192-4aa6-a173-f0be009fa8c4" class="mx-auto object-cover rounded-full h-10 w-10 " />
                                                 </a>
                                                 <div class="flex flex-col">
                                                     <span class="text-sm text-gray-900 font-semibold dark:text-white ml-2">
@@ -697,30 +695,18 @@ export default function Layout() {
                                             </li>
                                             <li class="flex items-center my-6 space-x-2">
                                                 <a href="#" class="block relative">
-                                                    <img alt="profil" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/i9FJRq3Ajw6CFjvAaK1viewjehn.jpg" class="mx-auto object-cover rounded-full h-10 w-10 " />
+                                                    <img alt="profil" src="https://firebasestorage.googleapis.com/v0/b/kampy-3.appspot.com/o/sameh?alt=media&token=0c184b7b-84ea-4029-b53c-efc90aba4ab9" class="mx-auto object-cover rounded-full h-10 w-10 " />
                                                 </a>
                                                 <div class="flex flex-col">
                                                     <span class="text-sm text-gray-900 font-semibold dark:text-white ml-2">
-                                                        Maria
+                                                        Sameh
                                                     </span>
                                                     <span class="text-sm text-gray-400 dark:text-gray-300 ml-2">
-                                                        can you send to me the last version of travel companion rules via my email?
+                                                        can you send to me the last version of Kampy events via my email?
                                                     </span>
                                                 </div>
                                             </li>
-                                            {/* <li class="flex items-center my-6 space-x-2">
-                                                <a href="#" class="block relative">
-                                                    <img alt="profil" src="https://i.pinimg.com/originals/66/00/9a/66009af3e45a6e4fa331614acae97b6f.png" class="mx-auto object-cover rounded-full h-10 w-10 " />
-                                                </a>
-                                                <div class="flex flex-col">
-                                                    <span class="text-sm text-gray-900 font-semibold dark:text-white ml-2">
-                                                        Marina
-                                                    </span>
-                                                    <span class="text-sm text-gray-400 dark:text-gray-300 ml-2">
-                                                        Can you share the next week meeting schedule?
-                                                    </span>
-                                                </div>
-                                            </li> */}
+
                                         </ul>
                                     </div>
                                 </div>
