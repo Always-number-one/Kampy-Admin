@@ -2,8 +2,8 @@ import { useState } from 'react'
 import SideBar from '../components/SideBar'
 import db from '../firebase/firebase';
 import { collection, query, doc, getDocs, deleteDoc } from "firebase/firestore";
-import { AiFillDelete,AiOutlinePhone } from 'react-icons/ai'
-import {GoLocation} from 'react-icons/go'
+import { AiFillDelete,AiFillPhone } from 'react-icons/ai'
+import {BiMap} from 'react-icons/bi'
 import {
     Card,
     CardHeader,
@@ -54,8 +54,8 @@ function Events({ events }) {
                 </CardBody>
                 <CardFooter divider className="inline-flex items-center justify-between py-3 ">
                     
-                <Typography variant="small"  className="flex gap-1"><GoLocation/> {event.location}</Typography>
-                  <Typography className='inline-flex' variant="small" ><AiOutlinePhone/> {event.contact}</Typography>
+                <Typography variant="small"  className="flex gap-1"><BiMap className='my-1'/> {event.location}</Typography>
+                  <Typography className='inline-flex' variant="small" ><AiFillPhone className="my-1 mx-1"/> {event.contact}</Typography>
                   <Typography variant="small"  className="flex gap-1">
                     <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
                    {event.places} Pax

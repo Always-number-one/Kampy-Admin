@@ -53,7 +53,7 @@ function Shops({list}) {
             </CardBody>
             <CardFooter divider className="flex items-center justify-between py-3">
                 
-              <Typography className='inline-flex' variant="small" ><AiFillPhone/>{article.phone}</Typography>
+              <Typography className='inline-flex mx-1' variant="small" ><AiFillPhone className="my-1"/>{article.phone}</Typography>
               <Typography variant="small" color="gray" className="flex gap-1">
                 <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
                {article.price} DT<GiReceiveMoney />

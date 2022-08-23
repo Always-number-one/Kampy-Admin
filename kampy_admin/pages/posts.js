@@ -57,10 +57,10 @@ function Posts({ list }) {
                     </CardBody>
                     <CardFooter divider className="flex items-center justify-between py-3">
                         
-                      <Typography variant="small" >{post.likes} <FcLike /></Typography>
+                      <Typography className='inline-flex' variant="small" > {post.likes} <FcLike className='my-1 mx-2' /></Typography>
                       <Typography variant="small" color="gray" className="flex gap-1">
                         <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
-                       {post.localisation}<BiMap />
+                       {post.localisation}<BiMap className='my-1' />
                       </Typography>
                       <button> <AiFillDelete  onClick={() =>
                           deletePost(post.id)
