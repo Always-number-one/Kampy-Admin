@@ -39,7 +39,7 @@ function Posts({ list }) {
          
             {posts.map(post =>{
                 return (
-                    <Card className="w-96">
+                    <Card className="w-96 py-10">
                     <CardHeader color="blue" className="relative h-56">
                       <img
                         src={post.image}

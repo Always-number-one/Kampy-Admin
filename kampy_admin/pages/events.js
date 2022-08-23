@@ -2,8 +2,8 @@ import { useState } from 'react'
 import SideBar from '../components/SideBar'
 import db from '../firebase/firebase';
 import { collection, query, doc, getDocs, deleteDoc } from "firebase/firestore";
-import { AiFillDelete,AiFillPhone } from 'react-icons/ai'
-import {IoPersonSharp} from 'react-icons/io'
+import { AiFillDelete,AiOutlinePhone } from 'react-icons/ai'
+import {GoLocation} from 'react-icons/go'
 import {
     Card,
     CardHeader,
@@ -18,7 +18,7 @@ function Events({ events }) {
     const deleteEvent = async (id) => {
         const d = doc(db, 'events', id);
         await deleteDoc(d)
-        setEvents(events)
+        
 
     }
     return (
@@ -31,11 +31,12 @@ function Events({ events }) {
         <h1 className='text-5xl text-center text-amber-600 mb-2'>Events Management</h1>
         <div className="relative z-20  flex flex-center w-full pl-0 md:p-4 justify-center md:space-y-2">
             <SideBar />
-        <div className="grid gap-24 grid-cols-3 grid-rows-3">
+        <div className="grid gap-24 grid-cols-3 grid-rows-3 " >
      
         {oldEvents.map(event =>{
+            console.log(event)
             return (
-                <Card className="w-96">
+                <Card className=" w-96 py-10">
                 <CardHeader color="blue" className="relative h-56">
                   <img
                     src={event.image}
@@ -51,12 +52,13 @@ function Events({ events }) {
                    {event.description}
                   </Typography>
                 </CardBody>
-                <CardFooter divider className="flex items-center justify-between py-3">
+                <CardFooter divider className="inline-flex items-center justify-between py-3 ">
                     
-                  <Typography variant="small" >{event.contact}<AiFillPhone/></Typography>
-                  <Typography variant="small" color="gray" className="flex gap-1">
+                <Typography variant="small"  className="flex gap-1"><GoLocation/> {event.location}</Typography>
+                  <Typography className='inline-flex' variant="small" ><AiOutlinePhone/> {event.contact}</Typography>
+                  <Typography variant="small"  className="flex gap-1">
                     <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
-                   20 pax<IoPersonSharp />
+                   {event.places} Pax
                   </Typography>
                   <button> <AiFillDelete  onClick={() =>
                       deleteEvent(event.id)
@@ -88,10 +90,12 @@ export async function getStaticProps() {
                 eventName: doc.data().eventName,
                 // group: doc.data().group,
                 image: doc.data().imgUrl,
-                // places: doc.data().nbrPlace,
+                places: doc.data().nbrPlace,
                 // startingDate: doc.data().startingDate,
+                location:doc.data().destination,
                 user:doc.data().username
             })
+          
         });
     } catch (error) {
         throw error;

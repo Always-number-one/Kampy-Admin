@@ -35,7 +35,7 @@ function Shops({list}) {
  
     {shop.map(article =>{
         return (
-            <Card className="w-96">
+            <Card className="w-96 py-10" >
             <CardHeader color="blue" className="relative h-56">
               <img
                 src={article.image}
@@ -53,7 +53,7 @@ function Shops({list}) {
             </CardBody>
             <CardFooter divider className="flex items-center justify-between py-3">
                 
-              <Typography variant="small" >{article.phone}<AiFillPhone/></Typography>
+              <Typography className='inline-flex' variant="small" ><AiFillPhone/>{article.phone}</Typography>
               <Typography variant="small" color="gray" className="flex gap-1">
                 <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
                {article.price} DT<GiReceiveMoney />
