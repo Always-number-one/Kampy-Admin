@@ -676,7 +676,7 @@ export default function Layout() {
                                                         Bader
                                                     </span>
                                                     <span class="text-sm text-gray-400 dark:text-gray-300 ml-2">
-                                                        Hey Sameh ! Do you read the new travel companion  doc ?
+                                                        Hey Sameh ! Did you check the new users ?
                                                     </span>
                                                 </div>
                                             </li>
